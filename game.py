@@ -43,6 +43,8 @@ class Game:
         castle = Room("Castle", "dans un énorme château fort avec des douves et un pont levis. Sur les tours, des flèches en or massif.")
         self.rooms.append(castle)
 
+        castle = Room("Arc en ciel", "dans un magnifique arc en ciel")
+        self.rooms.append(castle)
         # Create exits for rooms
 
         forest.exits = {"N" : cave, "E" : tower, "S" : castle, "O" : None}
