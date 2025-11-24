@@ -36,13 +36,15 @@ class Game:
         self.rooms.append(tower)
         cave = Room("Cave", "dans une grotte profonde et sombre. Des voix semblent provenir des profondeurs.")
         self.rooms.append(cave)
-        cottage = Room("Cottage", "dans un petit chalet pittoresque avec un toit de chaume et des murs en colombage. Une épaisse fumée verte sort de la cheminée.")
+        cottage = Room("Cottage", "dans un petit chalet pittoresque avec un toit de chaume et des murs en colombage. Une épaisse fumée rouge sort de la cheminée.")
         self.rooms.append(cottage)
         swamp = Room("Swamp", "dans un marécage sombre et ténébreux. L'eau bouillonne, les abords sont vaseux.")
         self.rooms.append(swamp)
         castle = Room("Castle", "dans un énorme château fort avec des douves et un pont levis. Sur les tours, des flèches en or massif.")
         self.rooms.append(castle)
 
+        castle = Room("Arc en ciel", "dans un magnifique arc en ciel")
+        self.rooms.append(castle)
         # Create exits for rooms
 
         forest.exits = {"N" : cave, "E" : tower, "S" : castle, "O" : None}
